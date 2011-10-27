@@ -1,2 +1,0 @@
-sersere
-from x in BasicInfo group x by x.M_Type into gx select new { M = gx.Key , data = from xx in gx group xx by xx.Sex into gxx select new { sex = gxx.Key , gcount = from xxx in gxx group xxx by xxx.Language into gxxx select new  {language1 = gxxx.Key  , count = gxxx.Count ()}}}
